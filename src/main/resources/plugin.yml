@@ -1,0 +1,25 @@
+name: EogendRealTime
+version: 1.0.0
+author: LavaPower
+main: fr.lavapower.eogendrealtime.EogendRealTime
+api-version: 1.19
+prefix: EogendRealTime
+
+commands:
+  realtime:
+    usage: /<command> <world>
+    aliases: []
+    description: Activer ou désactiver le temps réel pour un monde
+    permission: ERT.Realtime
+
+
+permissions:
+  ERT.*:
+    default: op
+    description: Permission pour toutes les commandes d'EogendRealTime
+    children:
+      ERT.Realtime: true
+
+  ERT.Realtime:
+    default: op
+    description: Permission pour la commande Realtime
